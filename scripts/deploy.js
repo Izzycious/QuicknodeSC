@@ -4,7 +4,7 @@ const { ethers } = require("hardhat");
 async function main() {
   const willContract = await ethers.getContractFactory("Inheritance");
 
-  const deployeWilContract = await willContract.deploy();
+  const deployedWillContract = await willContract.deploy();
 
   // wait for the contract to deploy
   await deployedWillContract.deployed();
